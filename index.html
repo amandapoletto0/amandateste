@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Consultório Médico || Entre ou cadastre-se!</title>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form>
+        <h1>Crie sua conta!</h1>
+
+        <div class="social-icons">
+          <button type="button" class="icon google"><i class="fa-brands fa-google"></i> Google</button>
+          <button type="button" class="icon facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+          <button type="button" class="icon github"><i class="fa-brands fa-github"></i> GitHub</button>
+          <button type="button" class="icon linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</button>
+        </div>
+        <span>ou utilize seu email para registrar-se!</span>
+        <input type="text" id="signup-name" placeholder="Nome" required minlength="2" autocomplete="name">
+        <input type="email" id="signup-email" placeholder="Email" required autocomplete="email">
+        <input type="password" id="signup-password" placeholder="Senha" required minlength="6" autocomplete="new-password">
+        <button type="submit">Cadastre-se</button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in">
+      <form>
+        <h1>Entre!</h1>
+        <div class="social-icons">
+          <button type="button" class="icon google"><i class="fa-brands fa-google"></i> Google</button>
+          <button type="button" class="icon facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+          <button type="button" class="icon github"><i class="fa-brands fa-github"></i> GitHub</button>
+          <button type="button" class="icon linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</button>
+        </div>
+        <span>ou use sua senha de email</span>
+        <input type="email" id="login-email" placeholder="Email" required autocomplete="email">
+        <input type="password" id="login-password" placeholder="Senha" required autocomplete="current-password">
+        <a href="#">Esqueceu sua senha?</a>
+        <button type="submit">Entre!</button>
+      </form>
+    </div>
+
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Bem vindo de volta!</h1>
+          <p>Insira seus dados pessoais para usar todos os recursos do site</p>
+          <button class="hidden" id="login">Entre!</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1 class="bemvindo">Prazer, me chamo Amanda! <br> Seja bem-vindo à sua consulta online!</h1>
+          <p>Cadastre-se com seus dados pessoais para utilizar todos os recursos do site</p>
+          <button class="hidden" id="register">Cadastre-se</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

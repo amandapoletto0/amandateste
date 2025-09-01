@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('imagem.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.logout-btn {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.logout-btn:hover { 
+    background: #45a049; 
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 90px auto 20px; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.sintomas label {
+  display: block;
+  margin: 6px 0;
+}
+
+.sintomas input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.sintomas button[type="submit"] {
+  margin-top: 12px;
+  padding: 10px;
+  width: 100%;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sintomas button[type="submit"]:hover { 
+    background: #45a049; 
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}

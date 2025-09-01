@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua consulta online</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="user-info">
+      Logado como: <span id="user-email">—</span>
+    </div>
+
+    <button id="logout" class="logout-btn">Sair</button>
+
+  </header>
+  <main class="container">
+    <h1>Detector de Sintomas</h1>
+    <form id="symptom-form" class="sintomas">
+      <label><input type="checkbox" value="febre"> Febre</label>
+      <label><input type="checkbox" value="tosse"> Tosse</label>
+      <label><input type="checkbox" value="dor_cabeca"> Dor de cabeça</label>
+      <label><input type="checkbox" value="nausea"> Náusea</label>
+      <label><input type="checkbox" value="fadiga"> Fadiga</label>
+      <label><input type="checkbox" value="falta_ar"> Falta de ar</label>
+      <label><input type="checkbox" value="dor_abdomen"> Dor abdominal</label>
+      <button type="submit">Analisar</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+  </main>
+
+  <script src="script2.js"></script>
+  
+</body>
+</html>
